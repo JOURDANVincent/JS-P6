@@ -1,6 +1,5 @@
 let eDiv = document.getElementById('eDiv');
 
-
 for (let year = 0; year <= 100; year++) {
 
   let lastDiv = eDiv.innerHTML;
