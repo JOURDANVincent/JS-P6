@@ -11,9 +11,9 @@ if (firstNumber < 2 | firstNumber > 10 ) {
 } 
 
 let secondNumber = null;
-if (secondNumber < 1 | secondNumber > 10 | secondNumber == null) {
+if (secondNumber < 1 | secondNumber > 10 | secondNumber == 0) {
     secondNumber = Number(window.prompt('secondNumber : Entre  1 et 10 ..'));
-    while (secondNumber < 1 | secondNumber > 10| secondNumber == null) {
+    while (secondNumber < 1 | secondNumber > 10| secondNumber == 0) {
         if (secondNumber == 0) {
             secondNumber = Number(window.prompt('secondNumber : Fais un effort !!!'));
         } else {
@@ -23,8 +23,6 @@ if (secondNumber < 1 | secondNumber > 10 | secondNumber == null) {
 } 
 
 let res = 0;
-let x = 250;
-
 while (res < 250) {
     res = (firstNumber * secondNumber);
     //console.log(res);
