@@ -1,12 +1,12 @@
 let firstNumber = 0;
-while (firstNumber < 1 | firstNumber > 10 | firstNumber == null) {
+if (firstNumber < 1 | firstNumber > 10 | firstNumber == null) {
     firstNumber = Number(window.prompt('firstNumber : Entre 0 et 10 ...'))
-    if (firstNumber == null) {
+    while (firstNumber == null) {
         firstNumber = Number(window.prompt('firstNumber : Fais un effort ...'));
     } 
 } 
 let secondNumber = 0;
-while (secondNumber <= 1 | secondNumber > 10 | secondNumber == null) {
+if (secondNumber <= 1 | secondNumber > 10 | secondNumber == null) {
     if (secondNumber == 0) {
         secondNumber = Number(window.prompt('secondNumber : pas 0 ...'));
     } else if (secondNumber == null) {
